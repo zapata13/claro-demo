@@ -1,0 +1,34 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "A brand new API with no content.  Go nuts!",
+    "version" : "1.0.0",
+    "title" : "Claro API"
+  },
+  "paths" : {
+    "/clients" : {
+      "get" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Lista de Clientes"
+          }
+        }
+      }
+    },
+    "/clients/{id}" : {
+      "get" : {
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Cliente por id"
+          }
+        }
+      }
+    }
+  }
+}
